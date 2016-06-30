@@ -1,0 +1,80 @@
+#topBackground {
+  background: url(http://static.asiawebdirect.com/m/phuket/portals/hong-kong-hotels-ws/homepage/attractions/all-attractions/allParagraphs/011112/image/central-hongkong.jpg) 50% fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -350px;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  padding: 320px 0;
+}
+
+#bottomBackground {
+  background: url(http://brandon-tampa-mover.com/wp-content/uploads/2014/09/Tampa_Financial_Planning_1.jpg) 100% fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 320px;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  padding: 300px 0;
+  text-color: #ffffff;
+}
+
+#middleBackground {
+  background: url(http://eskipaper.com/images/good-wallpapers-11.jpg) 100% fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+  text-color: #ffffff;
+}
+
+#home {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #37474F;
+  color: white;
+}
+
+#headshot {
+  background-size: contains;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+#experience {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+  font-size: 16px
+}
+
+#contact {
+  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  /* background-color: #1A237E; */
+}
+
+.well {
+  float: right;
+  text-align: center;
+  background-color: #eeeeee;
+  width: 25%;
+}
+
+.navbar {
+  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-color: white;
+}
