@@ -1,5 +1,5 @@
 #topBackground {
-  background: url(images/nanlian.jpg) 50% fixed;
+  background: url(../images/nanlian.jpg) 50% fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px -350px;
@@ -11,7 +11,7 @@
 }
 
 #bottomBackground {
-  background: url(images/singapore.jpg) 100% fixed;
+  background: url(../images/singapore.jpg) 100% fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px 320px;
