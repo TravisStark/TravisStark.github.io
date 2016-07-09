@@ -1,8 +1,8 @@
 #topBackground {
-  background: url(../images/nanlian.jpg) 50% fixed;
+  background: url(../images/nanlian.jpg) 0% fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0px -350px;
+  background-position: 0px -100px;
   height: auto;
   margin: 0 auto;
   width: 100%;
