@@ -1,5 +1,5 @@
 #topBackground {
-  background: url(../images/sky.jpg) 100% no-repeat center center fixed;
+  background: url(../images/sky.jpg) no-repeat center center fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px -200px;
@@ -11,7 +11,7 @@
 }
 
 #bottomBackground {
-  background: url(../images/hkbw.jpg) 100% no-repeat center center fixed;
+  background: url(../images/hkbw.jpg) no-repeat center center fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px 0px;
@@ -41,7 +41,7 @@
   padding-bottom: 80px;
   background-color: #37474F;
   color: white;
-  background: url(../images/sky.jpg) 100% no-repeat center center fixed;
+  background: url(../images/sky.jpg) no-repeat center center fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px -200px;
