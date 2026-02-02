@@ -29,20 +29,37 @@
             <div class="flex justify-between items-center py-4">
                 <a class="text-xl font-semibold text-gray-900" href="index.html">Travis Stark</a>
                 <nav class="hidden md:flex space-x-4 text-gray-700">
-                    <!-- <a class="hover:underline" href="index.html">Home</a>
-                    <a class="hover:underline" href="work/cloudwatch.html">Selected Work</a>
-                    <a class="hover:underline" href="experience.html">Experience</a>
-                    <a class="hover:underline" href="skills.html">Skills</a>
-                    <a class="hover:underline" href="speaking.html">Speaking</a>
-                    <a class="hover:underline" href="contact.html">Contact</a> -->
-                    <a class="hover:underline" href="files/Travis_Stark_Resume_01_2026.pdf" target="_blank"
-                        rel="noopener noreferrer">Resume</a>
-                    <a class="hover:underline" href="https://github.com/TravisStark" target="_blank"
-                        rel="noopener noreferrer">GitHub</a>
+                    <!-- desktop links (commented for now) -->
+                    <a class="hover:underline" href="files/Travis_Stark_Resume_01_2026.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a class="hover:underline" href="https://github.com/TravisStark" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </nav>
+
+                <!-- Mobile: hamburger -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- menu icon -->
+                        <svg id="menu-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        <!-- close icon (hidden) -->
+                        <svg id="menu-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-gray-50">
+        <div class="space-y-2">
+            <a class="block py-2 px-3 rounded hover:bg-gray-100" href="index.html">Home</a>
+            <a class="block py-2 px-3 rounded hover:bg-gray-100" href="work/cloudwatch.html">Selected Work</a>
+            <a class="block py-2 px-3 rounded hover:bg-gray-100" href="experience.html">Experience</a>
+            <a class="block py-2 px-3 rounded hover:bg-gray-100" href="skills.html">Skills</a>
+            <a class="block py-2 px-3 rounded hover:bg-gray-100" href="speaking.html">Speaking</a>
+            <a class="block py-2 px-3 rounded hover:bg-gray-100" href="contact.html">Contact</a>
+            <a class="block py-2 px-3 rounded hover:bg-gray-100" href="files/Travis_Stark_Resume_01_2026.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a class="block py-2 px-3 rounded hover:bg-gray-100" href="https://github.com/TravisStark" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+    </div>
     <!-- HERO -->
     <section id="title">
         <div class="hero flex items-center"
@@ -107,32 +124,36 @@
 
             <div class="space-y-8">
 
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <h3 class="text-xl font-semibold">Amazon Web Services — CloudWatch <span
-                            class="text-zinc-500 text-sm">— Arlington, VA</span></h3>
-                    <p class="text-zinc-400 text-sm mt-2">Software Development Engineer — Dec 2024 – Present</p>
-                    <p class="mt-4 text-gray-700">I work on the CloudWatch Agent and recently built the agent’s
+                <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                    <span class="absolute right-4 top-4 text-zinc-600 text-sm">Dec 2024 – Present</span>
+                    <h3 class="text-xl font-semibold">Amazon Web Services — CloudWatch</h3>
+                    <p class="text-zinc-600 text-sm mt-1">Software Development Engineer</p>
+                    <p class="text-zinc-600 text-sm mt-2">Arlington, VA</p>
+                    <p class="mt-4 text-gray-700">Core developer on the CloudWatch Agent. Built the agent’s
                         in-console management experience, cutting setup time from hours to minutes and improving fleet
-                        visibility across 16 regions.</p>
+                        visibility across 16 regions (Released at re:Invent 2025).</p>
                     <div class="mt-4 flex flex-wrap gap-2">
                         <span
                             class="inline-flex items-center px-3 py-1 rounded-full bg-blue-950 text-zinc-200 text-sm">Go</span>
                         <span
-                            class="inline-flex items-center px-3 py-1 rounded-full bg-blue-950 text-zinc-200 text-sm">Java</span>
+                            class="inline-flex items-center px-3 py-1 rounded-full bg-blue-950 text-zinc-200 text-sm">OpenTelemetry</span>
                         <span
                             class="inline-flex items-center px-3 py-1 rounded-full bg-blue-950 text-zinc-200 text-sm">TypeScript</span>
                         <span
                             class="inline-flex items-center px-3 py-1 rounded-full bg-blue-950 text-zinc-200 text-sm">React</span>
                         <span
-                            class="inline-flex items-center px-3 py-1 rounded-full bg-blue-950 text-zinc-200 text-sm">CloudWatch</span>
+                            class="inline-flex items-center px-3 py-1 rounded-full bg-blue-950 text-zinc-200 text-sm">EC2</span>
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full bg-blue-950 text-zinc-200 text-sm">EKS</span>
                     </div>
                 </div>
 
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <h3 class="text-xl font-semibold">Amazon <span class="text-zinc-500 text-sm">— Arlington, VA</span>
-                    </h3>
-                    <p class="text-zinc-400 text-sm mt-2">Software Development Engineer — Nov 2021 – Dec 2024</p>
-                    <p class="mt-4 text-gray-700">I led development of WorkflowUI and Guided Workflows, the platform
+                <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                    <span class="absolute right-4 top-4 text-zinc-600 text-sm">Nov 2021 – Dec 2024</span>
+                    <h3 class="text-xl font-semibold">Amazon</h3>
+                    <p class="text-zinc-600 text-sm mt-1">Software Development Engineer</p>
+                    <p class="text-zinc-600 text-sm mt-2">Arlington, VA</p>
+                    <p class="mt-4 text-gray-700">Led development of WorkflowUI and Guided Workflows, the platform
                         powering HR processes for 1.5M+ employees worldwide. My work spanned platform architecture,
                         analytics pipelines, accessibility, and cross-team launch readiness.</p>
                     <div class="mt-4 flex flex-wrap gap-2">
@@ -145,11 +166,12 @@
                     </div>
                 </div>
 
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <h3 class="text-xl font-semibold">Skyline Software Systems <span class="text-zinc-500 text-sm">—
-                            Herndon, VA</span></h3>
-                    <p class="text-zinc-400 text-sm mt-2">Software Engineer — Oct 2020 – Nov 2021</p>
-                    <p class="mt-4 text-gray-700">I developed plugins and tools for 3D GIS platforms, including
+                <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                    <span class="absolute right-4 top-4 text-zinc-600 text-sm">Oct 2020 – Nov 2021</span>
+                    <h3 class="text-xl font-semibold">Skyline Software Systems</h3>
+                    <p class="text-zinc-600 text-sm mt-1">Software Engineer</p>
+                    <p class="text-zinc-600 text-sm mt-2">Herndon, VA</p>
+                    <p class="mt-4 text-gray-700">Developed plugins and tools for 3D GIS platforms, including
                         measurement tools, geospatial search, and imagery/tileset handling. My work expanded the
                         platform’s capabilities across visualization, search, and data workflows.</p>
                     <div class="mt-4 flex flex-wrap gap-2">
@@ -162,11 +184,12 @@
                     </div>
                 </div>
 
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <h3 class="text-xl font-semibold">WebstaurantStore <span class="text-zinc-500 text-sm">— Tampa,
-                            FL</span></h3>
-                    <p class="text-zinc-400 text-sm mt-2">Software Engineer — Jan 2019 – Oct 2020</p>
-                    <p class="mt-4 text-gray-700">I built and optimized a .NET Core + Elasticsearch search API,
+                <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                    <span class="absolute right-4 top-4 text-zinc-600 text-sm">Jan 2019 – Oct 2020</span>
+                    <h3 class="text-xl font-semibold">WebstaurantStore</h3>
+                    <p class="text-zinc-600 text-sm mt-1">Software Engineer</p>
+                    <p class="text-zinc-600 text-sm mt-2">Tampa, FL</p>
+                    <p class="mt-4 text-gray-700">Built and optimized a .NET Core + Elasticsearch search API,
                         improving relevance and performance with a custom Lucene plugin and Redis caching. I also
                         strengthened reliability through contract testing and CI/CD improvements.</p>
                     <div class="mt-4 flex flex-wrap gap-2">
@@ -179,11 +202,12 @@
                     </div>
                 </div>
 
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <h3 class="text-xl font-semibold">Greenway Health <span class="text-zinc-500 text-sm">— Tampa,
-                            FL</span></h3>
-                    <p class="text-zinc-400 text-sm mt-2">Software Engineer — Jun 2017 – Jan 2019</p>
-                    <p class="mt-4 text-gray-700">I owned development of the Oracle CPQ quoting system and automated
+                <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                    <span class="absolute right-4 top-4 text-zinc-600 text-sm">Jun 2017 – Jan 2019</span>
+                    <h3 class="text-xl font-semibold">Greenway Health</h3>
+                    <p class="text-zinc-600 text-sm mt-1">Software Engineer</p>
+                    <p class="text-zinc-600 text-sm mt-2">Tampa, FL</p>
+                    <p class="mt-4 text-gray-700">Owned development of the Oracle CPQ quoting system and automated
                         workflows across Finance, Sales, and Legal. I also built and maintained integrations with
                         Salesforce.</p>
                     <div class="mt-4 flex flex-wrap gap-2">
@@ -194,11 +218,12 @@
                     </div>
                 </div>
 
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <h3 class="text-xl font-semibold">Net Synergy Virtual Solutions <span
-                            class="text-zinc-500 text-sm">— Tampa, FL</span></h3>
-                    <p class="text-zinc-400 text-sm mt-2">Software Engineer — Jul 2016 – Jun 2017</p>
-                    <p class="mt-4 text-gray-700">I developed CoffeeScript-based RPA automation tools and internal
+                <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                    <span class="absolute right-4 top-4 text-zinc-600 text-sm">Jul 2016 – Jun 2017</span>
+                    <h3 class="text-xl font-semibold">Net Synergy Virtual Solutions</h3>
+                    <p class="text-zinc-600 text-sm mt-1">Software Engineer</p>
+                    <p class="text-zinc-600 text-sm mt-2">Tampa, FL</p>
+                    <p class="mt-4 text-gray-700">Developed CoffeeScript-based RPA automation tools and internal
                         dashboards that improved task management and team efficiency.</p>
                     <div class="mt-4 flex flex-wrap gap-2">
                         <span
@@ -291,6 +316,24 @@
     </section>
 
     <!-- Bootstrap removed: using Tailwind / output.css -->
+        <script>
+            (function(){
+                var btn = document.getElementById('mobile-menu-button');
+                var menu = document.getElementById('mobile-menu');
+                var openIcon = document.getElementById('menu-open');
+                var closeIcon = document.getElementById('menu-close');
+                if (!btn || !menu) return;
+                btn.addEventListener('click', function(){
+                    var isHidden = menu.classList.contains('hidden');
+                    menu.classList.toggle('hidden');
+                    btn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+                    if (openIcon && closeIcon) {
+                        openIcon.classList.toggle('hidden');
+                        closeIcon.classList.toggle('hidden');
+                    }
+                });
+            })();
+        </script>
 </body>
 
 </html>
